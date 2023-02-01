@@ -17,5 +17,4 @@ Some concessions have been made in the interest of practicality, given this is s
   2. Subset of data/functionality: The given data had a number of columns I knew I wouldn't use (like latitude, longitude) so I omitted them. I also made the server routes as simple as possible, keying off of the locationid column in most cases. In a real-world setting, it's likely we'd want to do things like search the rows via food truck name, or select all food trucks that serve a certain food item.
   3. Dockerized but not deployed: While the db and server for this app run via Docker containers, I haven't deployed the app to AWS or the like since I'm just submitting the GH repo..happy to demo via ngrok or put it up on an EC2 instance if necessary!
   4. Manual import of data to postgres: I would have liked to add a startup shell script that pulls data into postgres without the need for user intervention. I decided against doing so because I wanted to spend the bulk of my time writing code, not ETL-ing the data.
-  5. Misc: No auth, would tweak docker-compose + env variables for production,
 
