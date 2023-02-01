@@ -1,7 +1,8 @@
 # To Start
 1. clone the repo & `cd` into it
 2. run `docker-compose up`
-3. navigate to 'http://localhost:3000'
+3. run the import commands found in 'import.md'
+4. navigate to 'http://localhost:3000'
 
 # Process Notes/Requirements
 I decided to write a CRUD app that lets users access the data via HTTP calls. The app is written in JS/Express, uses Postgres to store the .csv data, and runs locally via Docker. The commands I used to clean + import the data are detailed in 'import.md'. The process does make a few assumptions about the computer you run it on:
