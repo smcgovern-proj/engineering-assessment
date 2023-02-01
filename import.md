@@ -11,6 +11,5 @@ docker exec -it engineering-assessment-postgres-1 sh
 psql -U postgres
 \c postgres
 create table trucks (locationid varchar(255), Applicant varchar(255), cnn varchar(255), Address varchar(255));
-\COPY trucks (locationid, Applicant, cnn, LocationDescription, Address) FROM 'import_data.csv' WITH (FORMAT CSV, DELIMITER ',');
 \copy trucks from 'import_data.csv' with (format csv, delimiter ',');
 ```
